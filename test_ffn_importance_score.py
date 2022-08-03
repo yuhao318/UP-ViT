@@ -57,7 +57,7 @@ transform_test = transforms.Compose([
 ])
 
 
-testset = torchvision.datasets.ImageFolder(root='/mnt/ramdisk/ImageNet/fewshot2_train/', transform=transform_test)
+testset = torchvision.datasets.ImageFolder(root='/mnt/ramdisk/ImageNet/fewshot5_train/', transform=transform_test)
 testloader = torch.utils.data.DataLoader(testset, batch_size=batch_size, shuffle=False,pin_memory=True, num_workers=16)
 
 checkpoint = torch.load("pretrainmodel/deit_base_patch16_224-b5f2ef4d.pth", map_location='cpu')
@@ -162,6 +162,6 @@ for delete_ind in candidate_index:
             print(kl.sum.item())
         kls.append(kl.sum.item())
 
-with open("importance/Deit_base_12_ffn_3072_kl_" +str(args.reduce)+ "_5k.txt", 'w') as f:
+with open("importance/kl5k/importance/Deit_base_12_ffn_3072_kl_" +str(args.reduce)+ "_5k.txt", 'w') as f:
     for s in kls:
         f.write(str(s) + '\n')

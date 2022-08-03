@@ -2,8 +2,8 @@ import os
 import random
 import shutil
 
-target_path = "/mnt/ramdisk2/ImageNet/fewshot5_train/"
-source_path = "/mnt/ramdisk2/ImageNet/train/"
+target_path = "/mnt/ramdisk/ImageNet/fewshot5_train/"
+source_path = "/mnt/ramdisk/ImageNet/train/"
 
 
 if not os.path.exists(target_path):

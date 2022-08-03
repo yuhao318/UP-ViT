@@ -57,7 +57,7 @@ transform_test = transforms.Compose([
 # testset = torchvision.datasets.ImageFolder(root='../dataset/ImageNet/val/', transform=transform_test)
 # testset = torchvision.datasets.ImageFolder(root='/mnt/ramdisk/ImageNet/fewshot_val/', transform=transform_test)
 
-testset = torchvision.datasets.ImageFolder(root='/mnt/ramdisk/ImageNet/fewshot2_train/', transform=transform_test)
+testset = torchvision.datasets.ImageFolder(root='/mnt/ramdisk/ImageNet/fewshot5_train/', transform=transform_test)
 testloader = torch.utils.data.DataLoader(testset, batch_size=batch_size, shuffle=False,pin_memory=True, num_workers=8)
 
 # print('==> Resuming from checkpoint..')
@@ -185,6 +185,6 @@ for delete_ind in candidate_index:
         # results5.append(top5.avg.item())
         print(kl.sum.item())
         kls.append(kl.sum.item())
-with open("importance/Deit_base_12_neck_768_kl_2k.txt", 'a') as f:
+with open("importance/kl5k/importance/Deit_base_12_neck_768_kl_5k.txt", 'a') as f:
     for s in kls:
         f.write(str(s) + '\n')

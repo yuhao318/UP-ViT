@@ -26,3 +26,5 @@ CUDA_VISIBLE_DEVICES=0 python test_ffn_importance_score.py --reduce 8
 CUDA_VISIBLE_DEVICES=0 python test_ffn_importance_score.py --reduce 9
 CUDA_VISIBLE_DEVICES=0 python test_ffn_importance_score.py --reduce 10
 CUDA_VISIBLE_DEVICES=0 python test_ffn_importance_score.py --reduce 11
+
+python test_rank_kl.py
