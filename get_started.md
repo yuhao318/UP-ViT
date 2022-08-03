@@ -1,6 +1,6 @@
 # UP-DeiT implementation
 
-This folder contains the implementation of compressing DeiT-B into UP-DeiT-T.
+This repository contains the implementation of compressing DeiT-B into UP-DeiT-T.
 
 ## Main requirements
 
@@ -9,7 +9,7 @@ python >= 3.7
 torch >= 1.4.0
 torchvision >= 0.5.0
 ```
-We provide the detailed requirements in requirements.txt. You can run `conda install --yes --file requirements.txt` to create the same running environment as ours.
+We provide the detailed requirements in [requirements.txt](https://github.com/yuhao318/UP-ViT/blob/main/requirements.txt). You can run `conda install --yes --file requirements.txt` to create the same running environment as ours.
 
 ## Uasge
 
@@ -17,7 +17,7 @@ We provide the detailed requirements in requirements.txt. You can run `conda ins
 
 We use standard ImageNet dataset. You can download it from [http://image-net.org/](http://image-net.org/). 
 
-To generate the proxy dataset, assume the ImageNet dataset is saved on `/mnt/ramdisk`, run:
+To generate the proxy dataset, assume the ImageNet dataset is saved on `/mnt/ramdisk/`, run:
 ```
 python cp_image.py
 ```

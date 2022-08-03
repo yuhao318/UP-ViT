@@ -1,8 +1,8 @@
 # UP-ViT
-This is an official implementation for "[A Unified Pruning Framework for Vision Transformers](https://arxiv.org/pdf/2111.15127.pdf)".
+This is an official implementation for "[A Unified Pruning Framework for Vision Transformers](https://arxiv.org/abs/2111.15127)".
 
 ## Getting Started
-For UP-DeiT on the image classification task, please see get_started.md for detailed instructions.
+For UP-DeiT on the image classification task, please see [get_started.md](https://github.com/yuhao318/UP-ViT/blob/main/get_started.md) for detailed instructions.
 
 ## Main Results on ImageNet-1K with Pretrained Models
 ImageNet-1K Pretrained UP-DeiT Models
